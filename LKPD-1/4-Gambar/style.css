@@ -1,0 +1,23 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    #gambar-preview {
+        border: 5px solid;
+        border-radius: 0px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .kotak {
+        border-radius: 0px;
+    }
+
+    .lingkaran {
+        border-radius: 50% !important;
+
+    }
+
+    .segitiga {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="pilihgambar">Pilih Gambar:</label>
+    <select id="pilihgambar">
+        <option value="img/bunga.jpeg">Gambar 1</option>
+        <option value="img/mario.JPG">Gambar 2</option>
+        <option value="img/pohon.jpeg">Gambar 3</option>
+    </select>
+
+    <label for="opacitySelect">Pilih Opacity:</label>
+    <select id="opacitySelect"> 
+        <option value="1">1</option>
+        <option value="0.5">0.5</option>
+        <option value="0.2">0.2</option>
+    </select>
+
+    <input type="button" value="kirim" onclick="submit()">
+
+    <div class="imageContainer">
+        <img id="selectedImage" src="img/p-6000.png" alt="Selected Image" style="width: 300px; height: auto;">
+    </div>
+
+    <script> 
+        function submit() {
+            var gambar = document.getElementById("pilihgambar").value;
+            var opacity = document.getElementById("opacitySelect").value;
+            document.getElementById("selectedImage").src = gambar;
+            document.getElementById("selectedImage").style.opacity = opacity;
+        }
+    </script>
+</body>
+
+</html>

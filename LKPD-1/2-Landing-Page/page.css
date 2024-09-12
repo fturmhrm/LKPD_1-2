@@ -1,0 +1,9 @@
+.container , .card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.bs i {
+    margin: 0 5px;
+}
